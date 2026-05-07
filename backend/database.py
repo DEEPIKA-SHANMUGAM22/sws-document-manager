@@ -1,4 +1,5 @@
 import sqlite3
+import os
 
 DB_PATH = "app.db"
 

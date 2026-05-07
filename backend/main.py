@@ -5,7 +5,7 @@ import json
 
 class ConnectionManager:
     def __init__(self):
-        self.active_connections = []
+        self.active_connections: list[WebSocket] = []
 
     async def connect(self, websocket: WebSocket):
         await websocket.accept()
